@@ -413,7 +413,7 @@ FIRST FOOTER CONTENT
 .social_icons li {
     list-style: none;
     display: inline-block;
-    padding: none;
+    padding: 0;
 }
 
 .social_icons li:nth-child(1),
@@ -766,7 +766,6 @@ MEDIA QUERIES TABLET
         padding: 0;
         border-bottom: 10px solid #fff;
     }
-}
 
 
 /*========================
@@ -799,9 +798,7 @@ section.social_connect {
 }
 
 
-}
-
-/*END OF MEDIA QUERY*/
+} /*END OF MEDIA QUERY*/
 
 /*========================
 MEDIA QUERIE DESKTOP
@@ -948,7 +945,7 @@ MEDIA QUERIE DESKTOP
 .gallery-trigger ul li a:hover {
     background: rgb(23, 136, 33);
     color: #fff;
-    border: 1px solid rgb(23, 136, 33)3B;
+    border: 1px solid rgb(23, 136, 33);
 }
 .gallery-trigger ul li {
     display: inline-block;
