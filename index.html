@@ -1,256 +1,411 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
     <title>Soontorn Bahn Thai</title>
-    <meta name="description" content="Authentic Thai cuisine">
+    <meta name="description" content="Soontorn Bahn Thai is a premium thai restaurant located in downtown oakville.">
     <meta name="keywords"
-          content="thai, thai food, best thai food in oakville, burlington, bahnthai, soontorn, soontornbahnthai, best,">
-
-    <link rel="stylesheet" type="text/css"
-          href="https://fonts.googleapis.com/css?family=Satisfy|Bree+Serif|Candal|PT+Sans">
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400">
-    <link rel="stylesheet" type="text/css"
-          href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <!-- CSS -->
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.11.0/build/css/alertify.min.css"/>
-    <!-- Default theme -->
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.11.0/build/css/themes/default.min.css"/>
-    <!-- Semantic UI theme -->
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.11.0/build/css/themes/semantic.min.css"/>
-    <!-- Bootstrap theme -->
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.11.0/build/css/themes/bootstrap.min.css"/>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-
+          content="thai, thai food, best thai food in oakville, burlington, bahnthai, soontorn, best thaifood,">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css" media="screen" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Playball' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style-portfolio.css">
+    <link rel="stylesheet" href="css/picto-foundry-food.css"/>
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
+
 <body>
-<!--banner-->
-<section id="banner">
-    <div class="bg-color">
-        <header id="header">
-            <div class="container">
-                <div id="mySidenav" class="sidenav">
-                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                    <a href="#about" onclick="closeNav()">About</a>
-                    <a href="#menu-list" onclick="closeNav()">Menu</a>
-                    <a href="#contact" onclick="closeNav()">Contact us</a>
-                </div>
-                <!-- Use any element to open the sidenav -->
-                <span onclick="openNav()" class="pull-right menu-icon">☰</span>
-            </div>
-        </header>
-        <div class="container">
-            <div class="row">
-                <div class="inner text-center">
-                    <img src="assets/img/logo.svg" class="img-responsive" width="300" style="margin: 200px auto 10px;"/>
-                    <!-- <h1 class="logo-name">Delicious</h1> -->
-                    <!-- <h2>Food To fit your lifestyle & health.</h2> -->
-                    <p>Fine Thai Cuisine.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- / banner -->
-<!--about-->
-<section id="about" class="section-padding">
+
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
     <div class="container">
         <div class="row">
-            <div class="col-md-12 text-center marb-35">
-                <h1 class="header-h">Eating Thai Style.</h1>
-                <p>Almost always involves a number of people. Enjoying good food in the company of friends should be a
-                    cause of happiness, a celebration A Thai meal is composed of a variety of dishes, with rice as the
-                    centrepiece. It should include a combination of these flavours, sweet, sour, salty and hot, but in
-                    typically Thai manner there are no rigid rules about what goes with what. It is usual for all the
-                    dishes to be served at the same time, as unlike the style in the West, a meal is not made up of many
-                    separate course. The management and kitchen staff are Thai and we take pride in presenting you
-                    authentic Thai food from the "Land of Smiles" We hope you enjoy our cooking, as all food is freshly
-                    prepared to our best standards. Welcome to Bahn Thai Restaurant. We thank you for trying our
-                    restaurant and we sincerely hope your meal will be a memorable experience.</p>
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#top">SOONTORN BAHN THAI</a>
             </div>
-            <div class="col-md-1"></div>
-            <div class="col-md-10">
-                <div class="col-md-6 col-sm-6">
-                    <div class="about-info">
-                        <h2 class="heading">Soontorn Bahn Thai</h2>
-                        <p class="header-p">Soontorn Bahn Thai is the premium thai restaurant in downtown Oakville
-                            specialising in Royal Thai cuisine with fresh ingredients from Thailand.
-                            Soontorn Bahn Thai is extremely beautifully decorated to enhance the thai tropical effect
-                            and the romantic atmosphere. We have large sitting capacity and exclusive private area for
-                            your parties. </p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-sm-6">
-                    <img src="assets/img/res01.jpg" alt="" class="img-responsive">
-                </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav main-nav  clear navbar-right ">
+                    <li><a class="navactive color_animation" href="#top">WELCOME</a></li>
+                    <li><a class="color_animation" href="#story">ABOUT</a></li>
+                    <li><a class="color_animation" href="#menu">MENU</a></li>
+                    <li><a class="color_animation" href="#map">DIRECTION</a></li>
+                    <li><a class="color_animation" href="#connect">CONTACT</a></li>
+                </ul>
             </div>
-            <div class="col-md-1"></div>
+            <!-- /.navbar-collapse -->
+        </div>
+    </div>
+    <!-- /.container-fluid -->
+</nav>
+
+<div id="top" class="starter_container bg">
+        <div class="follow_container">
+            <div class="col-md-6 col-md-offset-3">
+                <!--<h2 class="top-title">Soontorn Bahn Thai</h2>-->
+                <img src="images/logo.svg" alt="Soontorn Bahn Thai" width="80%">
+                <h2 class="white second-title">" Premium Authentic Thai Cuisine"</h2>
+                <hr>
+            </div>
+        </div>
+</div>
+
+<!-- ============ About Us ============= -->
+
+<section id="story" class="description_content">
+    <div class="text-content container">
+        <div class="col-md-6">
+            <h1>About us</h1>
+            <div class="fa fa-cutlery fa-2x"></div>
+            <p class="desc-text">Soontorn Bahn Thai is the premium thai restaurant in downtown Oakville
+                specialising in Royal Thai cuisine with fresh ingredients from Thailand.
+                Soontorn Bahn Thai is extremely beautifully decorated to enhance
+                the thai tropical effect and the romantic atmosphere. We have large sitting capacity and
+                exclusive private area for your parties.</p>
+        </div>
+        <div class="col-md-6">
+            <div class="img-section">
+                <img src="https://farm2.staticflickr.com/1593/25331612744_4fe63f6ed3_z.jpg" width="250" height="220">
+                <img src="https://farm2.staticflickr.com/1603/25869347651_fee36606a5_z.jpg" width="250" height="220">
+                <div class="img-section-space"></div>
+                <img src="https://farm2.staticflickr.com/1529/25663721450_a1a14bb878_z.jpg" width="250" height="220">
+                <!--<img src="https://farm2.staticflickr.com/1628/25335582343_080958b192_z.jpg" width="250" height="220">-->
+            </div>
         </div>
     </div>
 </section>
-<!--/about-->
-<!-- event -->
-<section id="event">
-    <div class="bg-color" class="section-padding">
+
+
+<!-- ============ Pricing  ============= -->
+
+
+<section id="pricing" class="description_content">
+    <div class="pricing background_content">
+        <h1>Relaxing romantic <span>ambiance</span></h1>
+    </div>
+    <div class="text-content container" id="menu">
         <div class="container">
             <div class="row">
-                <div class="col-xs-12 text-center" style="padding:60px;">
-                    <h1 class="header-h">Chicken Satay</h1>
-                    <p class="header-p">(chicken s'tay)</p>
+                <div class="col-md-12 text-center marb-35">
+                    <h1 class="header-h">Menu List</h1>
                 </div>
-                <div class="col-md-12" style="padding-bottom:60px;">
-                    <div class="item active left">
-                        <div class="col-md-6 col-sm-6 left-images">
-                            <img src="assets/img/res02.jpg" class="img-responsive">
+
+                <div class="col-md-12  text-center gallery-trigger">
+                    <ul id="filter-list" class="clearfix">
+                        <li><a class="filter" data-filter="all">All</a></li>
+                        <li><a class="filter" data-filter=".flaticon-potatoes">Appetizer</a></li>
+                        <li><a class="filter" data-filter=".flaticon-salad-1">Thai Salad</a></li>
+                        <li><a class="filter" data-filter=".flaticon-stew">Soup</a></li>
+                        <li><a class="filter" data-filter=".flaticon-stew-1">Thai curries</a></li>
+                        <li><a class="filter" data-filter=".flaticon-shrimp">Fish &amp; Seafood</a></li>
+                        <li><a class="filter" data-filter=".flaticon-pan">Stir-fried Dish</a></li>
+                        <li><a class="filter" data-filter=".flaticon-kebab-1">Barbecue</a></li>
+                        <li><a class="filter" data-filter=".flaticon-carrot">Vegetable</a></li>
+                        <li><a class="filter" data-filter=".flaticon-spaguetti">Noodle Dish</a></li>
+                        <li><a class="filter" data-filter=".flaticon-rice">Rice Dish</a></li>
+                        <li><a class="filter" data-filter=".flaticon-ice-cream-14">Thai Dessert</a></li>
+                        <li><a class="filter" data-filter=".flaticon-risotto">Lunch Special</a></li>
+
+                    </ul>
+                    <!-- @end #filter-list -->
+                    <div id="Container" class="row"></div>
+
+                </div>
+            </div>
+            <!-- @end #w -->
+        </div>
+    </div>
+    </div>
+</section>
+
+
+<!-- ============ Our Beer  ============= -->
+
+
+<section id="beer" class="description_content">
+    <div class="beer background_content">
+        <h1>Great <span>Place</span> to enjoy</h1>
+    </div>
+    <div class="text-content container">
+        <div class="col-md-5">
+            <div class="img-section">
+                <img src="https://farm5.staticflickr.com/4513/37585107541_c611c5c05e_k.jpg" width="100%">
+                <img src="images/martini.jpg" width="100%">
+            </div>
+        </div>
+        <br>
+        <div class="col-md-6 col-md-offset-1">
+            <h1>OUR BEVERAGE</h1>
+            <div class="icon-wine-bottle fa-2x"></div>
+            <p class="desc-text">Shaken, Stirred or Straight up with varity selection of martinis, cocktails,
+               beers, and great wine, we are offer a full bar service to make you dinner more enjoyable.</p>
+            <!--<p class="desc-text">Here at Restaurant we’re all about the love of beer. New and bold flavors enter our-->
+                <!--doors every week, and we can’t help but show them off. While we enjoy the classics, we’re always-->
+                <!--passionate about discovering something new, so stop by-->
+                <!--and experience our craft at its best.</p>-->
+        </div>
+    </div>
+</section>
+
+
+<!-- ============ Our Bread  ============= -->
+
+
+<!-- <section id="bread" class=" description_content">
+    <div class="bread background_content">
+        <h1>Our Breakfast <span>Menu</span></h1>
+    </div>
+    <div class="text-content container">
+        <div class="col-md-6">
+            <h1>OUR BREAD</h1>
+            <div class="icon-bread fa-2x"></div>
+            <p class="desc-text">We love the smell of fresh baked bread. Each loaf is handmade at the crack of dawn, using only the simplest of ingredients to bring out smells and flavors that beckon the whole block. Stop by anytime and experience simplicity at its finest.</p>
+        </div>
+        <div class="col-md-6">
+            <img src="images/bread1.jpg" width="260" alt="Bread">
+            <img src="images/bread1.jpg" width="260" alt="Bread">
+        </div>
+    </div>
+</section> -->
+
+
+<!-- ============ Featured Dish  ============= -->
+
+<section id="featured" class="description_content">
+    <div class="featured background_content">
+        <h1>Our Featured Dishes <span>Menu</span></h1>
+    </div>
+    <div class="text-content container">
+        <div class="col-md-6">
+            <h1>Have a look to our dishes!</h1>
+            <div class="icon-hotdog fa-2x"></div>
+            <p class="desc-text">Every Dishes are handmade and freshly prepare, using local ingredients to
+                bring out most rememberable flavors of thaifood. Stop by anytime and experience simplicity at
+                its finest.</p>
+        </div>
+        <div class="col-md-6">
+            <ul class="image_box_story2">
+                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img src="https://farm5.staticflickr.com/4467/37553373382_331fcdb64c_b.jpg" alt="Chicken S'tay">
+                            <div class="carousel-caption">
+
+                            </div>
                         </div>
-                        <div class="col-md-6 col-sm-6 details-text">
-                            <div class="content-holder">
-                                <h2>Chicken Satay ( Chicken S\`tay)</h2>
-                                <p>This strips of chicken marinated in coconut with a touch of Thai spices and barbecued
-                                    to perfection. Served with Thai peanut sauce and a tangy cucumber salad. (4
-                                    Pieces)</p>
-                                <a class="btn btn-imfo btn-read-more">12.95</a>
+                        <div class="item">
+                            <img src="https://farm5.staticflickr.com/4455/37553371662_17cc873f32_b.jpg" alt="Four Flame Fish">
+                            <div class="carousel-caption">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="https://farm5.staticflickr.com/4485/36874801314_943fe59cc6_b.jpg" alt="Shrimp Roll">
+                            <div class="carousel-caption">
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </ul>
         </div>
     </div>
 </section>
-<!--/ event -->
-<!-- menu -->
-<section id="menu-list" class="section-padding">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12 text-center marb-35">
-                <h1 class="header-h">Menu List</h1>
-            </div>
-            <div class="col-md-12  text-center gallery-trigger">
-                <ul id="filters">
-                    <li><a class="filter" data-filter="all">All</a></li>
-                    <li><a class="filter" data-filter=".flaticon-potatoes">Appetizer</a></li>
-                    <li><a class="filter" data-filter=".flaticon-salad-1">Thai Salad</a></li>
-                    <li><a class="filter" data-filter=".flaticon-stew">Soup</a></li>
-                    <li><a class="filter" data-filter=".flaticon-stew-1">Thai curries</a></li>
-                    <li><a class="filter" data-filter=".flaticon-shrimp">Fish &amp; Seafood</a></li>
-                    <li><a class="filter" data-filter=".flaticon-pan">Stir-fried Dish</a></li>
-                    <li><a class="filter" data-filter=".flaticon-kebab-1">Barbecue</a></li>
-                    <li><a class="filter" data-filter=".flaticon-carrot">Vegetable</a></li>
-                    <li><a class="filter" data-filter=".flaticon-spaguetti">Noodle Dish</a></li>
-                    <li><a class="filter" data-filter=".flaticon-rice">Rice Dish</a></li>
-                    <li><a class="filter" data-filter=".flaticon-ice-cream-14">Thai Dessert</a></li>
-                    <li><a class="filter" data-filter=".flaticon-risotto">Lunch Special</a></li>
-                </ul>
-            </div>
 
-            <!-- load menus from firebase here -->
-            <div id="Container"></div>
-        </div>
+<!-- ============ Reservation  ============= -->
+
+<section id="reservation" class="description_content">
+    <div class="featured background_content">
+        <h1>Call us now to <span>reserve</span> a table</h1>
     </div>
-</section>
-<!--/ menu -->
-<!-- contact -->
-<section id="contact" class="section-padding">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12 text-center">
-                <h1 class="header-h">Contact us</h1>
-                <p class="header-p">210 Lakeshore Road East, Oakville, Ontario, L6J 1H8</p>
-            </div>
-        </div>
-        <div class="row msg-row">
-            <div class="col-md-4 col-sm-4 mr-15">
-                <div class="media-2">
-                    <div class="media-left">
-                        <div class="contact-phone bg-1 text-center"><span class="phone-in-talk fa fa-phone"></span>
-                        </div>
-                    </div>
-                    <div class="media-body">
-                        <h4 class="dark-blue regular">Phone Numbers</h4>
-                        <p class="light-blue regular alt-p">+1-905-8158488 <span class="contacts-sp">Call us </span></p>
-                    </div>
-                </div>
-                <div class="media-2">
-                    <div class="media-left">
-                        <div class="contact-email bg-14 text-center"><span class="hour-icon fa fa-clock-o"></span></div>
-                    </div>
-                    <div class="media-body">
-                        <h4 class="dark-blue regular">Opening Hours</h4>
-                        <p class="light-blue regular alt-p"> Mon-Wed 11.00 - 21:30</p>
-                        <p class="light-blue regular alt-p"> Thu 11.00 - 22:00</p>
-                        <p class="light-blue regular alt-p"> Fri 11.00 - 23:00</p>
-                        <p class="light-blue regular alt-p"> Sat 12.00 - 23:00</p>
-                        <p class="light-blue regular alt-p"> Sun 12.00 - 21:30</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-8 col-sm-8">
-                <form role="form" class="contactForm" id="contact-form">
-                    <!--<div id="sendmessage">Your booking request has been sent. Thank you!</div>-->
-                    <div id="errormessage"></div>
-                    <div class="col-md-6 col-sm-6 contact-form pad-form">
-                        <div class="form-group label-floating is-empty">
-                            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"
-                                   data-rule="minlen:4" data-msg="Please enter at least 4 chars"/>
-                            <div class="validation"></div>
-                        </div>
+    <div class="text-content container">
+        <div class="inner contact">
+            <!-- Form Area -->
+            <div class="contact-form">
+                <!-- Form -->
+                <!--<form id="contact-us" method="post" action="reserve.php">-->
+                    <!--&lt;!&ndash; Left Inputs &ndash;&gt;-->
+                    <!--<div class="container">-->
+                        <!--<div class="row">-->
+                            <!--<div class="col-lg-8 col-md-6 col-xs-12">-->
+                                <!--<div class="row">-->
+                                    <!--<div class="col-lg-6 col-md-6 col-xs-6">-->
+                                        <!--&lt;!&ndash; Name &ndash;&gt;-->
+                                        <!--<input type="text" name="first_name" id="first_name" required="required"-->
+                                               <!--class="form" placeholder="First Name"/>-->
+                                        <!--<input type="text" name="last_name" id="last_name" required="required"-->
+                                               <!--class="form" placeholder="Last Name"/>-->
+                                        <!--<input type="text" name="state" id="state" required="required" class="form"-->
+                                               <!--placeholder="State"/>-->
+                                        <!--<input type="text" name="datepicker" id="datepicker" required="required"-->
+                                               <!--class="form" placeholder="Reservation Date"/>-->
+                                    <!--</div>-->
 
-                    </div>
-                    <div class="col-md-6 col-sm-6 contact-form pad-form">
-                        <div class="form-group">
-                            <input type="email" class="form-control label-floating is-empty" name="email" id="email"
-                                   placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email"/>
-                            <div class="validation"></div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-sm-6 contact-form">
-                        <div class="form-group">
-                            <input type="text" class="form-control label-floating is-empty" name="phone" id="phone"
-                                   placeholder="Phone" data-rule="required" data-msg="This field is required"/>
-                            <div class="validation"></div>
-                        </div>
-                    </div>
-                    <div class="col-md-12 contact-form">
-                        <div class="form-group label-floating is-empty">
-                            <textarea class="form-control" id="message" name="message" rows="5" rows="3" data-rule="required"
-                                      data-msg="Please write something for us" placeholder="Message"></textarea>
-                            <div class="validation"></div>
-                        </div>
+                                    <!--<div class="col-lg-6 col-md-6 col-xs-6">-->
+                                        <!--&lt;!&ndash; Name &ndash;&gt;-->
+                                        <!--<input type="text" name="phone" id="phone" required="required" class="form"-->
+                                               <!--placeholder="Phone"/>-->
+                                        <!--<input type="text" name="guest" id="guest" required="required" class="form"-->
+                                               <!--placeholder="Guest Number"/>-->
+                                        <!--<input type="email" name="email" id="email" required="required" class="form"-->
+                                               <!--placeholder="Email"/>-->
+                                        <!--<input type="text" name="subject" id="subject" required="required" class="form"-->
+                                               <!--placeholder="Subject"/>-->
+                                    <!--</div>-->
 
-                    </div>
-                    <div class="col-md-12 btnpad">
-                        <div class="contacts-btn-pad">
-                            <button type="submit" class="contacts-btn">Send</button>
-                        </div>
-                    </div>
+                                    <!--<div class="col-xs-6 ">-->
+                                        <!--&lt;!&ndash; Send Button &ndash;&gt;-->
+                                        <!--<button type="submit" id="submit" name="submit"-->
+                                                <!--class="text-center form-btn form-btn">Reserve-->
+                                        <!--</button>-->
+                                    <!--</div>-->
+
+                                <!--</div>-->
+                            <!--</div>-->
+
+                            <div class="col-xs-12">
+                                <!-- Message -->
+                                <div class="right-text">
+                                    <h2>Hours</h2>
+                                    <hr>
+                                    <p>Monday to Wednesday: 11.00 AM - 9.30 AM</p>
+                                    <p>Thursday: 11.00 AM - 10.00 PM</p>
+                                    <p>Friday: 11.30 AM - 11.00 PM</p>
+                                    <p>Saturday: 12:00 PM - 11.00 PM</p>
+                                    <p>Sunday: 12:00 PM - 9.30 PM</p>
+                                </div>
+                            </div>
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!-- Clear -->
+                    <div class="clear"></div>
                 </form>
             </div>
+            <!-- End Contact Form Area -->
+        </div>
+        <!-- End Inner -->
+    </div>
+</section>
+<div id="connect" class="clear"></div>
+
+<!-- ============ Social Section  ============= -->
+
+<section class="social_connect">
+    <div class="text-content container">
+        <!--<div class="col-md-6">-->
+            <!--<span class="social_heading">FOLLOW</span>-->
+            <!--<ul class="social_icons">-->
+                <!--<li>-->
+                    <!--<a class="icon-twitter color_animation" href="#" target="_blank"></a>-->
+                <!--</li>-->
+                <!--<li>-->
+                    <!--<a class="color_animation" href="#" target="_blank"><i class="fa-facebook-f"></i></a>-->
+                <!--</li>-->
+                <!--<li>-->
+                    <!--<a class="icon-mail color_animation" href="#"></a>-->
+                <!--</li>-->
+            <!--</ul>-->
+        <!--</div>-->
+        <div class="col-md-12">
+            <span class="social_heading">Call us</span>
+            <span class="social_info"><a class="color_animation" href="tel:905-815-8488">(1) 905-815-8488</a></span>
         </div>
     </div>
 </section>
-<!-- / contact -->
-<section>
-    <div id="map">
+
+<!-- ============ Contact Section  ============= -->
+
+<section id="contact">
+    <div class="map" width="100%" height="450px">
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="inner contact">
+                    <!-- Form Area -->
+                    <div class="contact-form">
+                        <!-- Form -->
+                        <form id="contact-us">
+                            <!-- Left Inputs -->
+                            <div class="col-md-6 ">
+                                <!-- Name -->
+                                <input type="text" name="name" id="name" required="required" class="form"
+                                       placeholder="Name"/>
+                                <!-- Email -->
+                                <input type="email" name="email" id="email" required="required" class="form"
+                                       placeholder="Email"/>
+                                <!--Phone-->
+                                <input type="text" name="phone" id="phone" required="required" class="form"
+                                placeholder="Phone"/>
+                            </div>
+                            <!-- End Left Inputs -->
+                            <!-- Right Inputs -->
+                            <div class="col-md-6">
+                                <!-- Subject -->
+                                <input type="text" name="subject" id="subject" required="required" class="form"
+                                       placeholder="Subject"/>
+                                <!-- Message -->
+                                <textarea name="message" id="message" class="form textarea"
+                                          placeholder="Message"></textarea>
+                            </div>
+                            <!-- End Right Inputs -->
+                            <!-- Bottom Submit -->
+                            <div class="relative fullwidth col-xs-12">
+                                <!-- Send Button -->
+                                <button type="submit" id="submit" name="submit" class="form-btn">Send Message</button>
+                            </div>
+                            <!-- End Bottom Submit -->
+                            <!-- Clear -->
+                            <div class="clear"></div>
+                        </form>
+                    </div>
+                    <!-- End Contact Form Area -->
+                </div>
+                <!-- End Inner -->
+            </div>
+        </div>
     </div>
 </section>
-<!-- footer -->
-<footer class="footer text-center">
-    <div class="footer-top">
-        <div class="row">
-            <div class="col-md-offset-3 col-md-6 text-center">
-                <div class="widget">
-                    <h4 class="widget-title">Soontorn Bahn Thai</h4>
-                    <address>210 Lakeshore Road East,<br>Oakville, ON L6J 1H8</address>
-                </div>
-            </div>
+
+<section id="map-section">
+    <div id="map"></div>
+</section>
+
+<!-- ============ Footer Section  ============= -->
+
+<footer class="sub_footer">
+    <div class="container">
+        <div class="col-md-4">
+            <p class="sub-footer-text text-center">&copy; Restaurant 2014<a href="https://thaismile.ca/">Thaismile</a>
+            </p>
+        </div>
+        <div class="col-md-4">
+            <p class="sub-footer-text text-center">Back to <a href="#top">TOP</a></p>
         </div>
     </div>
 </footer>
-<!-- / footer -->
 
+/* Load Firebase */
 <script src="https://www.gstatic.com/firebasejs/4.5.0/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/4.5.0/firebase-auth.js"></script>
 <script src="https://www.gstatic.com/firebasejs/4.5.0/firebase-database.js"></script>
@@ -267,17 +422,18 @@
     };
     firebase.initializeApp(config);
 </script>
+
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/2.1.11/jquery.mixitup.js"></script>
-<script src="js/jquery.easing.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
 <script src="https://cdn.rawgit.com/alertifyjs/alertify.js/v1.0.10/dist/js/alertify.js"></script>
-<script src="js/fetchdata.js"></script>
-<script src="js/custom.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/fetchdata.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
 <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDe0VYhLbSEWm7gxMv0Rdq2ehfDrd0ocPk&callback=initMap">
-</script>
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDe0VYhLbSEWm7gxMv0Rdq2ehfDrd0ocPk&callback=initMap"></script>
 
 </body>
+
 </html>

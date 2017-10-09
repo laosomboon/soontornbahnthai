@@ -1,11 +1,11 @@
-
-function createMenuElement(ficon, menuName, menuPrice,menuDesc,menuImg){
+function createMenuElement(ficon, menuName, menuPrice, menuDesc, menuImg) {
 
 
     var div = document.createElement('div');
     div.classList.add('mix');
     div.classList.add(ficon);
     div.classList.add('col-sm-10');
+    div.classList.add('col-md-6');
     div.classList.add('menu-restaurant');
     div.setAttribute('data-cat', ficon);
 
@@ -50,22 +50,13 @@ var allmenus;
 const dbRefObject = firebase.database().ref().child('allmenus');
 
 
-dbRefObject.on('value', function(snap){
+dbRefObject.on('value', function(snap) {
     allmenus = snap.val();
-    allmenus.forEach(function (c) {
-
-        // var a = document.createElement('a');
-        // a.classList.add('filter');
-        // a.setAttribute("data-filter", '.' + c.icon);
-        // a.innerHTML = c.category;
-        // var li = document.createElement('li');
-        // li.appendChild(a);
-        // var menulist = document.getElementById('menuList');
-        // menulist.appendChild(li);
+    allmenus.forEach(function(c) {
 
         var menus = c.menus;
 
-        menus.forEach(function (menuItem) {
+        menus.forEach(function(menuItem) {
 
             var elem = createMenuElement(c.icon, menuItem.name, menuItem.oakville, menuItem.description, menuItem.image);
             var menuContainer = document.getElementById('Container');
@@ -73,4 +64,4 @@ dbRefObject.on('value', function(snap){
         });
     });
 
-    });/*end on snapshot*/
+}); /*end on snapshot*/
