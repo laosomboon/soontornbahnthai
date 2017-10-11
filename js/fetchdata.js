@@ -1,5 +1,7 @@
 function createMenuElement(ficon, menuName, menuPrice, menuDesc, menuImg) {
-
+    if (!menuPrice) {
+        return null;
+    }
 
     var div = document.createElement('div');
     div.classList.add('mix');
@@ -61,7 +63,9 @@ dbRefObject.on('value', function(snap) {
 
             var elem = createMenuElement(c.icon, menuItem.name, menuItem.oakville, menuItem.description, menuItem.image);
             var menuContainer = document.getElementById('Container');
-            menuContainer.appendChild(elem);
+            if (elem) {
+                menuContainer.appendChild(elem);
+            }
         });
     });
 

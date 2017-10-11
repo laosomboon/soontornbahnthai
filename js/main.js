@@ -15,25 +15,29 @@ $(document).ready(function() {
     $(document).on("scroll", onScroll);
 
 
-    $("#contact-us").submit(function(e) {
+    $("#contact-form").submit(function(e) {
+
         var name = document.getElementById('name');
         var email = document.getElementById('email');
         var phone = document.getElementById('phone');
         var message = document.getElementById('message');
 
         if (!name.value || !email.value || !phone.value || !message.value) {
+
             alertify.error('Please check your entries');
+            e.preventDefault();
+            $(this).reset();
         } else {
             $.ajax({
-                url: "https://formspree.io/saranat2515@gmail.com",
+                url: "https://formspree.io/saranat2515@hotmail.com",
                 method: "POST",
                 data: $(this).serialize(),
                 dataType: "json"
             });
-            e.preventDefault();
-            $(this).get(0).reset();
             alertify.success('Message sent');
-         }
+            this.reset();
+            e.preventDefault();
+        }
     });
 
 
