@@ -2,9 +2,13 @@
 GLOBAL
 =========================*/
 
+#my-h1{
+    font-weight:100;
+}
+
 h1 {
     font-size: 37px;
-    font-weight: 900;
+    font-weight: 200;
     width: 414px;
     letter-spacing: 0.040em;
     border: 1px solid rgba(47, 46, 47, 0.59);
@@ -238,7 +242,7 @@ INTRO CONTAINER
 }
 
 .second-title {
-    font-weight: lighter;
+    font-weight: 200;
     font-size: 30px;
     font-style: italic;
     text-transform: capitalize;
@@ -343,7 +347,7 @@ DESCRIPTION BODY CONTENT
 
 h1 {
     font-size: 28px;
-    font-weight: 900;
+    font-weight: 200;
     width: 225px;
     letter-spacing: 0.040em;
     border: 8px solid #2f2e2f;
@@ -746,7 +750,7 @@ MEDIA QUERIES TABLET
     }
     h1 {
         font-size: 32px;
-        font-weight: 900;
+        font-weight: 200;
         width: 280px;
         letter-spacing: 0.040em;
         border: 1px solid #2f2e2f;
