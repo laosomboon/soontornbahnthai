@@ -907,6 +907,7 @@ MEDIA QUERIE DESKTOP
 
 .menu-restaurant .menu-title {
     float: left;
+    text-align: left;
     max-width: 85%;
     font-family: Montserrat, arial;
     text-transform: uppercase;
