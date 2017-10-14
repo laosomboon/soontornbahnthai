@@ -900,7 +900,6 @@ MEDIA QUERIE DESKTOP
 }
 
 .menu-restaurant {
-    width: 50%;
     float: left;
     padding: 15px;
     position: relative;
@@ -908,6 +907,7 @@ MEDIA QUERIE DESKTOP
 
 .menu-restaurant .menu-title {
     float: left;
+    max-width: 85%;
     font-family: Montserrat, arial;
     text-transform: uppercase;
     letter-spacing: 1px;
