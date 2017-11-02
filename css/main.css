@@ -301,17 +301,9 @@ INTRO CONTAINER
 }
 
 .beer.background_content {
-    /* background: url('https://farm5.staticflickr.com/4480/23732506138_7ed0def65c_k.jpg') no-repeat center center; */
     background: url('https://farm5.staticflickr.com/4507/37536255646_7151875861_k.jpg') no-repeat center center;
     background-size: cover;
     background-position: 70% 50%;
-}
-
-.featured.background_content {
-    background: url('https://farm5.staticflickr.com/4480/23732506138_7ed0def65c_k.jpg') no-repeat center center;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
 }
 
 .pricing.background_content {
@@ -321,7 +313,48 @@ INTRO CONTAINER
     background-attachment: fixed;
 }
 
-.reservation.background_content {
+.featured.background_content {
+    background: url('https://farm5.staticflickr.com/4480/23732506138_7ed0def65c_k.jpg') no-repeat center center;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+@media (max-width: 1024px) {
+    .pricing.background_content {
+        background: url('https://farm5.staticflickr.com/4508/37536307136_f0debbd6da_b.jpg') no-repeat center center;
+        /*1024*/
+    }
+    .featured.background_content {
+        background: url('https://farm5.staticflickr.com/4480/23732506138_30f4d29b21_b.jpg') no-repeat center center;
+        /*1024*/
+    }
+}
+
+@media (max-width: 800px) {
+    .pricing.background_content {
+        background: url('https://farm5.staticflickr.com/4508/37536307136_f0debbd6da_c.jpg') no-repeat center center;
+        /*800*/
+    }
+    .featured.background_content {
+        background: url('https://farm5.staticflickr.com/4480/23732506138_30f4d29b21_c.jpg') no-repeat center center;
+        /*800*/
+    }
+}
+
+@media (max-width: 640) {
+    .pricing.background_content {
+        background: url('https://farm5.staticflickr.com/4508/37536307136_f0debbd6da_z.jpg') no-repeat center center;
+        /*640*/
+    }
+    .featured.background_content {
+        background: url('https://farm5.staticflickr.com/4480/23732506138_30f4d29b21_z.jpg') no-repeat center center;
+        /*640*/
+    }
+}
+
+
+/* .reservation.background_content {
     background: url('https://farm5.staticflickr.com/4480/23732506138_7ed0def65c_k.jpg') no-repeat center center;
     background-size: cover;
     background-position: center;
@@ -333,7 +366,7 @@ INTRO CONTAINER
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-}
+} */
 
 
 /*========================
